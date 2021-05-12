@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 配置文件的根元素 -->
+<configuration>
+    <!-- 属性：定义配置外在化 -->
+    <properties resource="db.properties"></properties>
+    <!-- 设置：定义mybatis的一些全局性设置 -->
+    <settings>
+        <!-- 具体的参数+名和参数值 -->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+    <!-- 类型名称：为一些类定义别名 -->
+    <typeAliases>
+        <!--<typeAlias alias="User" type="pojo.User"/>-->
+        <!--<typeAlias alias="Role" type="pojo.Role"/>-->
+        <!--<package name="pojo"/>-->
+    </typeAliases>
+    <!--&lt;!&ndash; 映射器：指定映射文件或者映射类 &ndash;&gt;-->
+    <!--<mappers>-->
+        <!--<mapper resource="com/smbms/dao/BillDaoMapper.xml"/>-->
+        <!--<mapper resource="com/smbms/dao/ProviderMapper.xml"/>-->
+        <!--<mapper resource="com/smbms/dao/RoleDaoMapper.xml"/>-->
+        <!--<mapper resource="com/smbms/dao/UserMapper.xml"/>-->
+    <!--</mappers>-->
+</configuration>
